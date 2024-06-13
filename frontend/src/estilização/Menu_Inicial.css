@@ -1,0 +1,70 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu.css');
+
+body, html {
+    body {
+        background: 
+            linear-gradient(to bottom, #27292c, #27292c, #000000 120%, #000000 120%),
+            url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAc/xKkYAAAAASUVORK5CYII=');
+        background-blend-mode: overlay;
+        background-size: cover;
+        height: 100vh;
+    }
+    
+}
+
+/* cabeçalho */
+#menu {
+    background-image: linear-gradient(to right, #000000, #27292c, #27292c, #000000);
+    padding-right: 3px;
+    padding-left: 3px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+#menu h1 {
+    color:white;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+}
+
+
+
+/*menu lateral */
+#menu button {
+    background: none; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+    position: absolute; 
+    top: 49px;
+    left: 13px; 
+    width: 41px; 
+    height: 25px; 
+}
+#menu i {
+    top: 5px;
+    left: 1px;
+}
+#menu i,
+#menu i::after,
+#menu i::before {
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 2px;
+    border-radius: 3px;
+    background: white
+}
+#menu i::after,
+#menu i::before {
+    content: "";
+    position: absolute;
+    top: -10px
+}
+#menu i::after {
+    top: 10px
+}
